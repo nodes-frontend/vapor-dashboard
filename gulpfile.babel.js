@@ -69,6 +69,12 @@ gulp.task('copy', () =>
     .pipe($.size({title: 'copy'}))
 );
 
+gulp.task('copy-moment', () => {
+    gulp.src(['app/scripts/moment.min.js'])
+        .pipe(gulp.dest('dist/scripts'))
+        .pipe($.size({title: 'copy fucking moment'}))
+});
+
 // Compile and automatically prefix stylesheets
 gulp.task('styles', () => {
   const AUTOPREFIXER_BROWSERS = [
@@ -120,8 +126,8 @@ gulp.task('scripts', () =>
       //       to be correctly concatenated
         // Other scripts
         './app/scripts/jquery.min.js',
-        './app/scripts/moment.min.js',
-        './app/scripts/Chart.bundle.js',
+        // './app/scripts/moment.min.js',
+        './app/scripts/Chart.js',
         './app/scripts/richmarker.js',
         './app/scripts/socket-connection.js',
         './app/scripts/statistics.js',
@@ -213,7 +219,7 @@ gulp.task('serve:dist', ['default'], () =>
 gulp.task('default', ['clean'], cb =>
   runSequence(
     'styles',
-    ['html', 'scripts', 'images', 'copy'],
+    ['html', 'scripts', 'images', 'copy', 'copy-moment'],
     'generate-service-worker',
     cb
   )
