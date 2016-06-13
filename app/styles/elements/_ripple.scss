@@ -1,0 +1,58 @@
+svg .circle-1 {
+	animation: circle-1 2s ease-out infinite;
+	stroke: #9f69c4;
+}
+
+svg .circle-2 {
+	animation: circle-2 2s ease-out infinite;
+	stroke: #9f69c4;
+}
+
+svg .circle-3 {
+	animation: circle-3 2s ease-out infinite;
+	stroke: #9f69c4;
+}
+
+@keyframes circle-1 {
+	0% {
+		r: 0;
+		opacity: 1;
+	}
+	90% {
+		r: 25;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+@keyframes circle-2 {
+	0% {
+		r: 0;
+		opacity: 1;
+	}
+	20% {
+		r: 0;
+		opacity: 1;
+	}
+	90% {
+		r: 20;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+@keyframes circle-3 {
+	0% {
+		r: 0;
+		opacity: 1;
+	}
+	40% {
+		r: 0;
+		opacity: 1;
+	}
+	90% {
+		r: 15; }
+	100% {
+		opacity: 0;
+	}
+}

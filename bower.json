@@ -1,0 +1,19 @@
+{
+  "name": "vapor-dashboard",
+  "version": "1.0.0",
+  "authors": [
+    "Dennis Haulund Nielsen"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "resources/assets/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "foundation-sites": "~6.2.3"
+  }
+}

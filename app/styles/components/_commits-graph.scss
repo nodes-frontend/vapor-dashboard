@@ -1,0 +1,11 @@
+#commits {
+	margin-top: 10px;
+	max-height: 200px;
+	min-height: 200px;
+}
+@media screen and (min-height: 640px) {
+	#commits {
+		max-height: 230px;
+		min-height: 230px;
+	}
+}

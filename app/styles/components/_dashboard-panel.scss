@@ -1,0 +1,40 @@
+.dashboard-panel {
+	margin: rem-calc(15) 0;
+	background-color: $vapor-lightest-gray;
+	border: 1px solid $vapor-light-gray;
+	box-shadow: 0px 5px 10px $vapor-light-gray;
+}
+
+.dashboard-panel__title,
+.dashboard-panel__content {
+	padding: 0 rem-calc(15);
+}
+.dashboard-panel__title.collapse,
+.dashboard-panel__content.collapse {
+	padding: 0;
+}
+
+.dashboard-panel__title {
+	color: $vapor-primary;
+	border-bottom: 1px solid $vapor-light-gray;
+}
+.dashboard-panel__title .h1,
+.dashboard-panel__title .h2,
+.dashboard-panel__title .h3,
+.dashboard-panel__title .h4,
+.dashboard-panel__title .h5,
+.dashboard-panel__title .h6,
+.dashboard-panel__title h1,
+.dashboard-panel__title h2,
+.dashboard-panel__title h3,
+.dashboard-panel__title h4,
+.dashboard-panel__title h5,
+.dashboard-panel__title h6,
+.dashboard-panel__title p,
+.dashboard-panel__title a {
+	margin: 0;
+}
+
+.dashboard-panel.dashboard-panel--secondary .dashboard-panel__title {
+	color: $vapor-secondary;
+}
