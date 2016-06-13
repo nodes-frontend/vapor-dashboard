@@ -318,12 +318,12 @@
 			ipLookup.getIp(ip)
 				.done(function (result) {
 					var m = visitorMarker.create(map, result.data);
-					// setTimeout(() => {
-					//
-					// 	m.setMap(null);
-					// 	m = undefined;
-					//
-					// }, 9000);
+					setTimeout(() => {
+
+						m.setMap(null);
+						m = undefined;
+
+					}, 9000);
 				});
 		}
 
