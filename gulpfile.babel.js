@@ -33,6 +33,7 @@ import swPrecache from 'sw-precache';
 import gulpLoadPlugins from 'gulp-load-plugins';
 import {output as pagespeed} from 'psi';
 import pkg from './package.json';
+import ghPages from 'gulp-gh-pages';
 
 const $ = gulpLoadPlugins();
 const reload = browserSync.reload;
@@ -263,6 +264,11 @@ gulp.task('generate-service-worker', ['copy-sw-scripts'], () => {
     // glob always use '/'.
     stripPrefix: rootDir + '/'
   });
+});
+
+gulp.task('deploy-gh-pages', () => {
+    return gulp.src('./dist/**/*')
+        .pipe(ghPages());
 });
 
 // Load custom tasks from the `tasks` directory
