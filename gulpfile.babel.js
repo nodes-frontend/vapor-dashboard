@@ -120,6 +120,7 @@ gulp.task('scripts', () =>
       //       to be correctly concatenated
         // Other scripts
         './app/scripts/jquery.min.js',
+        './app/scripts/moment.min.js',
         './app/scripts/Chart.bundle.js',
         './app/scripts/richmarker.js',
         './app/scripts/socket-connection.js',
