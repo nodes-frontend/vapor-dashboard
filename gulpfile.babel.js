@@ -266,7 +266,7 @@ gulp.task('generate-service-worker', ['copy-sw-scripts'], () => {
   });
 });
 
-gulp.task('deploy-gh-pages', () => {
+gulp.task('deploy-gh-pages', ['default'], () => {
     return gulp.src('./dist/**/*')
         .pipe(ghPages());
 });
