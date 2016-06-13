@@ -315,6 +315,9 @@
 
 		function _createVisitorMarker(map, data, ip) {
 
+			var pulseDuration = 2000;
+			var pulses = pulseDuration * 6;
+
 			ipLookup.getIp(ip)
 				.done(function (result) {
 					var m = visitorMarker.create(map, result.data);
@@ -323,7 +326,7 @@
 						m.setMap(null);
 						m = undefined;
 
-					}, 9000);
+					}, pulses);
 				});
 		}
 
